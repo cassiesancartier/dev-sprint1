@@ -1,3 +1,29 @@
 *** Cut and paste the for loop here ***
 
 *** What is the for loop doing? ***
+
+
+- What is a route, and how do you specify one in Flask?
+A route is what Flask uses to bind a function to a URL.  To specify one in Flask, you use the @app.route() decorator, and different parts of the route can be specified as variables (using <>) or converted (using <converter:int/string...>etc).
+
+- What is the only route we’ve specified in our application?
+The route that we've specified is '/'.
+
+- What is the method that gets called when we hit that route?
+The function def hello() is called, which returns "Hello Internet!"
+
+- If I wanted to add a route at “/world” that printed “Hello, World” on the screen, what would that code look like?
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/world")
+def hello_world():
+    return "Hello World!"
+
+if __name__ == "__main__":
+    app.run()
+
+- If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code under the ‘if __name__ == “__main__”: be executed? Why not?
+
+No, that code will not be executed because if __name__ == "__main__" will be false.  Instead, __name__ == 'testingflask', since that is where the function that is being called sits. When you run a function that is imported from another file, all of the function and class definitions from the other file are run, but not its main() code.
