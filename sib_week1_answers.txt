@@ -1,6 +1,6 @@
 *** Cut and paste the for loop here ***
 
-*** What is the for loop doing? ***
+*** What is the for loop doing? ***  CS:  not sure what these prompts are for?
 
 
 - What is a route, and how do you specify one in Flask?
