@@ -13,7 +13,7 @@ class View(flask.views.MethodView):
 			return flask.render_template('index.html')
 
 		def post(self):
-			result =  eval(flask.request.form['expression'])
+			result =  eval (flask.request.form['expression'])
 			flask.flash(result)
 			return self.get()
 		
