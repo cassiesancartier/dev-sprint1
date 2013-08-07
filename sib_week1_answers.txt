@@ -1,6 +1,11 @@
 *** Cut and paste the for loop here ***
+<<<<<<< HEAD
 
 *** What is the for loop doing? ***  CS:  not sure what these prompts are for?
+=======
+ 
+*** What is the for loop doing? ***
+>>>>>>> bb3fe53295c8fe095d02bd79ca5efd0ec393d176
 
 
 - What is a route, and how do you specify one in Flask?
