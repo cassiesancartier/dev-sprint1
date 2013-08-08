@@ -1,11 +1,11 @@
 *** Cut and paste the for loop here ***
-<<<<<<< HEAD
 
-*** What is the for loop doing? ***  CS:  not sure what these prompts are for?
-=======
- 
-*** What is the for loop doing? ***
->>>>>>> bb3fe53295c8fe095d02bd79ca5efd0ec393d176
+                    {% for message in messages %}
+{{message}}					
+					{% endfor %}
+
+*** What is the for loop doing? ***  
+I believe this is indicating that the message should be displayed in this location, and then that is all that should happen. So, once it's been displayed, then the foor loop ends.
 
 
 - What is a route, and how do you specify one in Flask?
